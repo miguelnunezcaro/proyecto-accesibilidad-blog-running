@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Scripts-->
+    <script defer src="js/main.js"></script>
+    <script defer src="js/scriptVideo.js"></script>
+    <script defer src="js/switch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div>
+        <header class="headerPrincipal text-center bg-warning">
+            <img class="img1" src="img/imagenLayout.svg" alt="Logo de RunningMan">
+            <img class="icono" src="img/iconoRunningMan.webp" alt="Logo de RunningMan">
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Inicio
+                    <i class="bi bi-house"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="div1 collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Zapatillas
+                                <i class="bi bi-cart4"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entradas
+                                <i class="bi bi-ticket-fill"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Crear Entrada
+                                <i class="bi bi-plus-square-fill"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#ventanaModal">Login
+                                <i class="bi bi-box-arrow-in-right"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register
+                                <i class="bi bi-person-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <a id="buscar" class="navbar-brand" href="#">
+                            <i id="iconoLupa" class="bi bi-search show"></i>
+                            <i id="iconoX" class="bi bi-x-circle collapse"></i>
+                        </a>
+                        <input id="textoBuscar" type="text" placeholder="Buscar..." class="form-control collapse">
+                    </form>
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" for="lightSwitch"> Modo Oscuro </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid contenedor bg-light">
+            <div class="row">
+                <div class="col-sm-7">
+                    <article class="container">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Entradas</li>
+                            </ol>
+                        </nav>
+                        <h5 class="text-center">Lista de eventos</h5>
+                        <div class="album py-5">
+                            <div class="container">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                    <div class="col">
+                                        <div class="card shadow-sm d-flex justify-content-center">
+                                            <img src="img/woman-2592247_960_720.jpg"
+                                                alt="Chica corriendo por el bosque">
+                                            <div class="card-body bg-light bg-light">
+                                                <p>Categoria: Running</p>
+                                                <p>Etiqueta: #Running #Runner</p>
+                                                <p>Titulo: Carrera por el bosque</p>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus optio
+                                                    delectus in facere nostrum.
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Likes">
+                                                            <small>9</small>
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Comentarios">
+                                                            <small>15</small>
+                                                            <i class="bi bi-chat-fill"></i>
+                                                        </button>
+                                                    </div>
+                                                    <button class="btn btn-sm btn-outline-secondary"
+                                                        aria-label="Visualizaciones">365
+                                                        <i class="bi bi-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm d-flex justify-content-center">
+                                            <img src="img/evento2.jpg" alt="Imagen de carrera 10k">
+                                            <div class="card-body bg-light">
+                                                <p>Categoria: Running</p>
+                                                <p>Etiqueta: #Running #Runner</p>
+                                                <p>Titulo: Carrera 10k</p>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus optio
+                                                    delectus in facere nostrum.
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Likes">
+                                                            <small>99</small>
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Comentarios">
+                                                            <small>47</small>
+                                                            <i class="bi bi-chat-fill"></i>
+                                                        </button>
+                                                    </div>
+                                                    <button class="btn btn-sm btn-outline-secondary"
+                                                        aria-label="Visualizaciones">456
+                                                        <i class="bi bi-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm d-flex justify-content-center">
+                                            <img src="img/evento3.jpg" alt="Imagen de carrera urbana">
+                                            <div class="card-body bg-light">
+                                                <p>Categoria: Running</p>
+                                                <p>Etiqueta: #Running #Runner</p>
+                                                <p>Titulo: Carrera urbana</p>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus optio
+                                                    delectus in facere nostrum.
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Likes">
+                                                            <small>27</small>
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Comentarios">
+                                                            <small>18</small>
+                                                            <i class="bi bi-chat-fill"></i>
+                                                        </button>
+                                                    </div>
+                                                    <button class="btn btn-sm btn-outline-secondary"
+                                                        aria-label="Visualizaciones">321
+                                                        <i class="bi bi-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm d-flex justify-content-center">
+                                            <img src="img/evento8.jpg" alt="Chica corriendo por el campo">
+                                            <div class="card-body bg-light">
+                                                <p>Categoria: Running</p>
+                                                <p>Etiqueta: #Running #Runner</p>
+                                                <p>Titulo: Carrera en campo<p>
+                                                        <p class="card-text">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Minus optio
+                                                            delectus in facere nostrum.
+                                                        </p>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div class="btn-group">
+                                                                <button type="button"
+                                                                    class="btn btn-sm btn-outline-secondary"
+                                                                    aria-label="Likes">
+                                                                    <small>112</small>
+                                                                    <i class="bi bi-heart-fill"></i>
+                                                                </button>
+                                                                <button type="button"
+                                                                    class="btn btn-sm btn-outline-secondary"
+                                                                    aria-label="Comentarios">
+                                                                    <small>24</small>
+                                                                    <i class="bi bi-chat-fill"></i>
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn btn-sm btn-outline-secondary"
+                                                                aria-label="Visualizaciones">997
+                                                                <i class="bi bi-eye"></i>
+                                                            </button>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm d-flex justify-content-center">
+                                            <img src="img/evento7.webp" alt="Chica corriendo por la carretera">
+                                            <div class="card-body bg-light">
+                                                <p>Categoria: Running</p>
+                                                <p>Etiqueta: #Running #Runner</p>
+                                                <p>Titulo: Carrera en carretera</p>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus optio
+                                                    delectus in facere nostrum.
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Likes">
+                                                            <small>151</small>
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Comentarios">
+                                                            <small>15</small>
+                                                            <i class="bi bi-chat-fill"></i>
+                                                        </button>
+                                                    </div>
+                                                    <button class="btn btn-sm btn-outline-secondary"
+                                                        aria-label="Visualizaciones">2300
+                                                        <i class="bi bi-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm d-flex justify-content-center">
+                                            <img src="img/evento6.webp" alt="Imagen de carrera en el estadio">
+                                            <div class="card-body bg-light">
+                                                <p>Categoria: Event</p>
+                                                <p>Etiqueta: #Running #Runner</p>
+                                                <p>Titulo: Carrera en el estadio</p>
+                                                <p class="card-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus optio
+                                                    delectus in facere nostrum.
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Likes">
+                                                            <small>48</small>
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                            aria-label="Comentarios">
+                                                            <small>23</small>
+                                                            <i class="bi bi-chat-fill"></i>
+                                                        </button>
+                                                    </div>
+                                                    <button class="btn btn-sm btn-outline-secondary"
+                                                        aria-label="Visualizaciones">888
+                                                        <i class="bi bi-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <aside class="colRight">
+                            <div class="text-center">
+                                <img class="banner" src="img/banner.png" alt="Banner de rebajas">
+                            </div>
+                            <p class="p_aside1 text-center">
+                                <strong>¡Síguenos en nuestras redes sociales!</strong>
+                                <br>
+                                <span>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-twitch"></i>
+                                    <i class="bi bi-tiktok"></i>
+                                    <i class="bi bi-facebook"></i>
+                                </span>
+                            </p>
+                        </aside>
+                        <aside class="my-3">
+                            <div id="carouselExampleCaptions" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/1.jpg" class="d-block w-100"
+                                            alt="Imagen de zapatos en la montaña">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 class="text-truncate">Carrera en la montaña</h5>
+                                            <p class="text-truncate">Consiste en correr por senderos,
+                                                caminos o caminos secundarios a través de montes, montañas o cerros
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/carrusel2.jpg" class="d-block w-100"
+                                            alt="Imagen de chico corriendo">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 class="text-truncate">Beneficios del running</h5>
+                                            <p class="text-truncate">
+                                                Uno de los principales es acelerar el metabolismo
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/why-running-its-fun.webp" class="d-block w-100"
+                                            alt="Imagen de tres chicos corriendo">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 class="text-truncate">Los mejores eventos</h5>
+                                            <p class="text-truncate">
+                                                RunningMan te ofrece los eventos más exclusivos
+                                                y divertidos del mundo del running
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-warning text-black">
+            <footer class="container py-5 bg-warning" aria-label="Footer de la página RunningMan">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Secciones principales</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-black">Inicio</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Zapatillas</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Entradas</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Crear Entrada</a></li>
+                            <li class="nav-item mb-2"><a data-bs-toggle="modal" data-bs-target="#ventanaModal"
+                                    class="nav-link p-0 text-black">Login</a></li>
+                            <li class="nav-item mb-2"><a href="register.html"
+                                    class="nav-link p-0 text-black">Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Dirección de la empresa</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">C/ Ave del paraíso,
+                                    edificio 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Etiquetas</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">#Running</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">#Runner</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">#Sport</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">#Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <h5>Categorías</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Running</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Jump</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Party</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Event</a></li>
+                        </ul>
+                    </div>
+                    <div class="col mx-5">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-twitch"></i>
+                        <i class="bi bi-tiktok"></i>
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2023 RunningMan, Inc. Todos los derechos reservados.
+                        <i class="bi bi-cc-circle"></i>
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <div class="modal fade" id="ventanaModal" aria-hidden="true" aria-labelledby="ventanaModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-light">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body bg-light">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="username" class="form-label">Usuario:</label>
+                                <input type="text" class="form-control" id="username"
+                                    placeholder="Introduce tu usuario...">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="password" class="form-label">Contraseña:</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Introduce tu contraseña...">
+                            </div>
+                            <br>
+                            <div class="form-check form-switch col-sm-6 my-2 mx-3">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">
+                                    Mantener la sesión abierta
+                                </label>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                                <a href="#" aria-label="¿Has olvidado la contraseña?">
+                                    ¿Has olvidado la contraseña?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <video autoplay muted loop class="video" id="video" controls aria-label="Video de personas haciendo running">
+        <source src="video/runningVideo.mp4" type="video/mp4">
+    </video>
+    <div class="content" id="content">
+        <h1>RUNNING MAN</h1>
+        <button id="b">Cerrar</button>
+    </div>
+</body>
+
+</html>
